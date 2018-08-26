@@ -17,6 +17,9 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'rails_admin', '~> 1.3'
+gem 'globalize', git: 'https://github.com/globalize/globalize'
+gem 'activemodel-serializers-xml'
+gem 'rails_admin_globalize_field'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
