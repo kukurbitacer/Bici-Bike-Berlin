@@ -10,10 +10,48 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_26_154806) do
+ActiveRecord::Schema.define(version: 2018_08_27_174305) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "guides", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.string "email"
+    t.string "phone"
+    t.string "address"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "photo"
+  end
+
+  create_table "tour_translations", force: :cascade do |t|
+    t.integer "tour_id", null: false
+    t.string "locale", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "name"
+    t.text "description"
+    t.string "location"
+    t.index ["locale"], name: "index_tour_translations_on_locale"
+    t.index ["tour_id"], name: "index_tour_translations_on_tour_id"
+  end
+
+  create_table "tours", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.text "location"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "guide_id"
+    t.string "photo"
+    t.boolean "active", default: true
+    t.boolean "first_page", default: false
+    t.index ["guide_id"], name: "index_tours_on_guide_id"
+    t.index ["user_id"], name: "index_tours_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -23,8 +61,11 @@ ActiveRecord::Schema.define(version: 2018_08_26_154806) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "admin", default: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "tours", "guides"
+  add_foreign_key "tours", "users"
 end
