@@ -45,4 +45,20 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+  config.model 'Tour' do
+    configure :translations, :globalize_tabs
+  end
+
+  config.model 'Tour::Translation' do
+    visible false
+    configure :locale, :hidden do
+      help ''
+    end
+    include_fields :locale, :name, :description, :location
+  end
+
+
+  config.included_models = ['Tour','Tour::Translation', 'User', 'Guide']
+
 end
