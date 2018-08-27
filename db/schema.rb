@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_26_163525) do
+ActiveRecord::Schema.define(version: 2018_08_27_173342) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,6 +35,8 @@ ActiveRecord::Schema.define(version: 2018_08_26_163525) do
     t.datetime "updated_at", null: false
     t.bigint "guide_id"
     t.string "photo"
+    t.boolean "active", default: true
+    t.boolean "first_page", default: false
     t.index ["guide_id"], name: "index_tours_on_guide_id"
     t.index ["user_id"], name: "index_tours_on_user_id"
   end
