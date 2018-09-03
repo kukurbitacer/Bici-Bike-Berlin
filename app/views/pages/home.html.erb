@@ -1,7 +1,12 @@
 <div class="banner">
-  <div class="banner-content">
+  <div class="banner-content text-center">
     <h1>Bici Bike Berlin</h1>
     <h3><%= t('.discover_berlin') %></h3>
+    <div class="banner-button">
+      <%= link_to root_path, class: "btn btn-success" do  %>
+        <%= t('.all_tours') %>
+      <% end %>
+    </div>
   </div>
 </div>
 <div class="container">
