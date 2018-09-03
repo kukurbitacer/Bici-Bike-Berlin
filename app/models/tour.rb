@@ -10,6 +10,7 @@ class Tour < ApplicationRecord
   translates :name, :description, :location
   accepts_nested_attributes_for :translations, allow_destroy: true
 
-  translation_class.validates :title, presence: true
+  translation_class.validates :name, presence: true
+  translation_class.validates :description, presence: true, length: { minimum: 200 }
 
 end
