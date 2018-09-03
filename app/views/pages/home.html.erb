@@ -9,10 +9,25 @@
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="row">
-    <h3><%= t('.popular_tours') %></h3>
+<div class="wrapper-white">
+  <div class="container">
+    <div class="row">
+      <h3 class="wrapper-title text-center"><%= t('.popular_tours') %></h3>
+      <% @tours.each do |tour| %>
+        <div class="col-xs-12 col-sm-4">
+          <div class="card-tour" style="background-image:linear-gradient(90deg, rgba(255,255,255,0.65) 0%, rgba(0,0,0,0) 100%) , url('<%= cl_image_path tour.photo %>');background-position: center; background-size: cover;">
+            <div class="card-description">
+              <h4 class="card-title"><%= tour.name %></h4>
+              <p class="card-location"><%= tour.location %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
+</div>
+
+<div class="container">
   <div class="row">
     <h3><%= t('.why_visit') %></h3>
   </div>
