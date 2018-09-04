@@ -33,8 +33,36 @@
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <h3><%= t('.why_visit') %></h3>
+<div class="wrapper-yellow">
+  <div class="container">
+    <h3 class="wrapper-title text-center"><%= t('.why_visit') %></h3>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
+          <div class=" description-element text-center">
+            <h4 class="subtitle-white"><%= t('.authentic_experience') %></h4>
+            <p class="paragraph-white"><%= t('.authentic_experience_description') %></p>
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-5">
+        <div class="card-back-white">
+          <div class="card-image card-offset-right" style="background-image: url(<%= image_path('bike-wall.jpg') %>)">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
+        <div class="card-back-white">
+          <div class="card-image card-offset-left" style="background-image: url(<%= image_path('bikes.jpg') %>)">
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-5">
+          <div class="description-element text-center">
+            <h4 class="subtitle-white"> <%= t('.away_from_the_masses') %></h4>
+            <p class="paragraph-white"><%= t('.away_from_the_masses_text') %></p>
+          </div>
+      </div>
+    </div>
   </div>
 </div>
