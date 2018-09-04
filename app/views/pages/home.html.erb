@@ -3,8 +3,8 @@
     <h1>Bici Bike Berlin</h1>
     <h3><%= t('.discover_berlin') %></h3>
     <div class="banner-button">
-      <%= link_to root_path, class: "btn btn-success" do  %>
-        <%= t('.all_tours') %>
+      <%= link_to root_path, class: "button button-large" do  %>
+        <span><%= t('.all_tours') %></span>
       <% end %>
     </div>
   </div>
@@ -23,7 +23,7 @@
                   <p class="card-location"><i class="fas fa-map-marker-alt"></i> <%= tour.location %></p>
 
                 </div>
-                <button class="btn btn-success">More</button>
+                <button class="button button-small"><i class="fas fa-arrow-right"></i></button>
               </div>
             </div>
           </div>
