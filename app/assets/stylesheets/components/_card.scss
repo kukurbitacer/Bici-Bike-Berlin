@@ -94,15 +94,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 2px;
 
-  .subtitle-white {
-  color: $black;
-}
-
-.paragraph-white {
-  color: $black;
-  margin: 0;
-  font-size: 15px;
+  .paragraph-white {
+    margin: 0;
+    font-size: 15px;
 }
 
 }
