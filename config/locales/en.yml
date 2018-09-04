@@ -9,3 +9,6 @@ en:
       authentic_experience_description: "Discover memorials, squares, museums and architectural distinctiveness of \"new\" und \"old\" Berlin like most Berliner, by bike !"
       away_from_the_masses: "Discover Berlin away from the masses"
       away_from_the_masses_text: "Saunter on secret path through the capital and listen to anecdotes about different topics of the city. Discover much more accompanied by a local"
+  tours:
+    index:
+      all_tours: "All tours"
