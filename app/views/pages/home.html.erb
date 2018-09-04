@@ -9,10 +9,31 @@
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="row">
-    <h3><%= t('.popular_tours') %></h3>
+<div class="wrapper-white">
+  <div class="container">
+    <div class="row">
+      <h3 class="wrapper-title text-center"><%= t('.popular_tours') %></h3>
+      <% @tours.each do |tour| %>
+        <div class="col-xs-12 col-sm-4">
+        <div class="card-back">
+          <div class="card-tour" style="background-image: url('<%= cl_image_path tour.photo %>');background-position: center; background-size: cover;">
+              <div class="card-description">
+                <div class="right-card">
+                  <h4 class="card-title"><%= tour.name %></h4>
+                  <p class="card-location"><i class="fas fa-map-marker-alt"></i> <%= tour.location %></p>
+
+                </div>
+                <button class="btn btn-success">More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
+</div>
+
+<div class="container">
   <div class="row">
     <h3><%= t('.why_visit') %></h3>
   </div>

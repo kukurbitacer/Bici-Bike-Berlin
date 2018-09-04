@@ -1,0 +1,51 @@
+.card-tour {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  color: $black;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all .3s ease-in;
+  cursor: pointer;
+  position: relative;
+  border-radius: 2px;
+}
+
+.card-back {
+  height: 270px;
+  position: relative;
+  background-color: $yellow;
+  border-radius: 2px;
+}
+
+.card-tour:hover {
+  top: -15px;
+  left: 15px;
+}
+
+.card-description {
+  width: 100%;
+  padding: 10px 10px;
+  height: 100px;
+  bottom: 0px;
+  position: absolute;
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    font-size: 15px;
+    color: $gray;
+  }
+}
+
+.font-icon {
+  font-size: 15px;
+}
+
+.card-title {
+  margin: 10px 0px;
+  font-size: 20px;
+}

@@ -1,0 +1,15 @@
+.wrapper-white {
+  width: 100%;
+  background-color: $white;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper-title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: $black;
+  font-weight: bold;
+}
