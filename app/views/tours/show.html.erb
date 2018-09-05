@@ -14,8 +14,15 @@
             <p><%= @tour.description %></p>
           </div>
         </div>
-        <div class="tour-guide card-back-white card-height-100 card-basic">
+        <div class="tour-guide card-back-white card-basic">
           <h3><%= t('.your_guide') %></h3>
+          <div class="avatar">
+
+          </div>
+          <div class="guide-description">
+            <h4><%= @tour.guide.name %></h4>
+            <p><%= @tour.guide.description %></p>
+          </div>
         </div>
       </div>
       <div class="col-xs-12 col-sm-5 col-md-4">
