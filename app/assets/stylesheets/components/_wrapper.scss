@@ -6,7 +6,9 @@
 
 .wrapper-yellow {
   width: 100%;
-  background-color: $yellow;
+  background: -webkit-linear-gradient(bottom left, rgba(249,225,114,1) 0%, rgba(255,201,76,1) 38%, rgba(255,201,76,1) 67%, rgba(249,225,114,1) 100%);
+  background: -o-linear-gradient(bottom left, rgba(249,225,114,1) 0%, rgba(255,201,76,1) 38%, rgba(255,201,76,1) 67%, rgba(249,225,114,1) 100%);
+  background: linear-gradient(to top right, rgba(249,225,114,1) 0%, rgba(255,201,76,1) 38%, rgba(255,201,76,1) 67%, rgba(249,225,114,1) 100%);
   padding: 20px;
 }
 
