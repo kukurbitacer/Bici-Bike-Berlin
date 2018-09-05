@@ -1,0 +1,29 @@
+<div class="banner-tour" style="background-image: url('<%= @tour.photo %>')">
+  <div class="banner-content text-center" >
+    <h2><%= @tour.name %></h2>
+  </div>
+</div>
+<div class="wrapper-yellow">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-7 col-md-8">
+        <div class="card-basic card-back-white card-height-300">
+          <h3><%= t('.tour_description') %></h3>
+          <p><span><i class="fas fa-map-marker-alt"></i> <%= @tour.location %></span></p>
+          <div class="tour-description-paragraph">
+            <p><%= @tour.description %></p>
+          </div>
+        </div>
+        <div class="tour-guide card-back-white card-height-100 card-basic">
+          <h3><%= t('.your_guide') %></h3>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-5 col-md-4">
+        <div class="tour-booking card-back-white card-height-200 card-basic">
+          <h3><%= t('.book_now') %></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
