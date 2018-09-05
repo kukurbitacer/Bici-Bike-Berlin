@@ -12,8 +12,30 @@
   border-radius: 2px;
 }
 
+.card-tour-index {
+  height: 95%;
+  width: 105%;
+  position: absolute;
+  top: 6px;
+  left: -2.5%;
+  color: $black;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all .3s ease-in;
+  position: relative;
+  border-radius: 2px;
+}
+
+.card-tour-index:hover {
+  height: 100%;
+  width: 110%;
+  top: 0;
+  left: -5%;
+}
+
 .card-back {
+  margin: 20px 0px;
   height: 270px;
+  width: 100%;
   position: relative;
   background-color: $green;
   border-radius: 2px;
@@ -42,6 +64,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  h4 {
+    font-size: 18px;
+  }
 
   p {
     font-size: 15px;
@@ -85,7 +111,7 @@
 
 .description-element {
   padding: 10px;
-  height: 200px;
+  height: 180px;
   margin: 10px;
   background-color: $white;
   color: $black;

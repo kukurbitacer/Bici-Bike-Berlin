@@ -1,0 +1,10 @@
+.height-100vh {
+  min-height: calc(100vh - 70px);
+}
+
+.page-title {
+  margin: 0;
+  color: $black;
+  font-weight: bold;
+  font-size: 30px;
+}
