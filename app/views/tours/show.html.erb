@@ -14,14 +14,20 @@
             <p><%= @tour.description %></p>
           </div>
         </div>
-        <div class="tour-guide card-back-white card-basic">
+        <div class="card-back-white card-basic">
+          <div class="tour-guide">
           <h3><%= t('.your_guide') %></h3>
-          <div class="avatar">
-
+            <div class="icon-small">
+              <%= link_to guide_path(@tour.guide) do %> <i class="fas fa-user-circle"></i>
+              <% end %>
+            </div>
           </div>
+          <div class="tour-guide">
+            <%= cl_image_tag(@tour.guide.photo, class: "avatar")%>
           <div class="guide-description">
             <h4><%= @tour.guide.name %></h4>
-            <p><%= @tour.guide.description %></p>
+            <p><%= @tour.guide.small_description %></p>
+          </div>
           </div>
         </div>
       </div>
