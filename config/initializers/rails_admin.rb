@@ -58,7 +58,19 @@ RailsAdmin.config do |config|
     include_fields :locale, :name, :description, :location
   end
 
+  config.model 'Guide' do
+    configure :translations, :globalize_tabs
+  end
 
-  config.included_models = ['Tour','Tour::Translation', 'User', 'Guide']
+  config.model 'Guide::Translation' do
+    visible false
+    configure :locale, :hidden do
+      help ''
+    end
+    include_fields :locale, :description, :small_description
+  end
+
+
+  config.included_models = ['Tour','Tour::Translation', 'User', 'Guide', 'Guide::Translation']
 
 end

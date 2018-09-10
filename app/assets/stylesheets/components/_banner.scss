@@ -1,6 +1,16 @@
-.banner {
-  height: calc(100vh - 70px);
+
+.banner-tour {
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.banner-home {
   background: linear-gradient(135deg, rgba(0,0,0,0.57) 0%,rgba(0,0,0,0) 100%), asset-url("banner.jpg");
+  height: calc(100vh - 70px);
   background-position: center;
   background-size: cover;
   display: flex;
