@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_27_174305) do
+ActiveRecord::Schema.define(version: 2018_09_05_141007) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "guide_translations", force: :cascade do |t|
+    t.integer "guide_id", null: false
+    t.string "locale", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text "description"
+    t.text "small_description"
+    t.index ["guide_id"], name: "index_guide_translations_on_guide_id"
+    t.index ["locale"], name: "index_guide_translations_on_locale"
+  end
 
   create_table "guides", force: :cascade do |t|
     t.string "name"
@@ -24,6 +35,7 @@ ActiveRecord::Schema.define(version: 2018_08_27_174305) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "photo"
+    t.text "small_description"
   end
 
   create_table "tour_translations", force: :cascade do |t|

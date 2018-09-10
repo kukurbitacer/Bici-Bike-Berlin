@@ -4,4 +4,8 @@ class ToursController < ApplicationController
   def index
     @tours = Tour.where(active: true)
   end
+
+  def show
+    @tour = Tour.find(params[:id])
+  end
 end

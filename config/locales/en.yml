@@ -12,3 +12,7 @@ en:
   tours:
     index:
       all_tours: "All tours"
+    show:
+      tour_description: "Tour description"
+      book_now: "Book now"
+      your_guide: "Your guide"
