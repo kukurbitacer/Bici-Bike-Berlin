@@ -7,5 +7,7 @@ class ToursController < ApplicationController
 
   def show
     @tour = Tour.find(params[:id])
+    @booking = Booking.new
   end
+
 end

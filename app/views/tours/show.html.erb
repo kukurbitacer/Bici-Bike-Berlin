@@ -34,16 +34,9 @@
       <div class="col-xs-12 col-sm-5 col-md-4">
         <div class="tour-booking card-back-white card-height-200 card-basic">
           <h3><%= t('.book_now') %></h3>
-          <div class="booking-form">
-            <%= simple_form_for @booking do |f| %>
-              <%= f.input :first_name %>
-              <%= f.input :last_name %>
-              <%= f.input :email %>
-              <%= f.input :phone %>
-              <%= f.input :comment %>
-              <%= f.sumbit %>
-            <% end %>
-          </div>
+         <div class="booking-form">
+           <%= render 'bookings/form', tour: @tour, booking: @booking %>
+         </div>
         </div>
       </div>
     </div>
