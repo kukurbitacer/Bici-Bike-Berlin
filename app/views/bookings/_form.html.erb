@@ -1,13 +1,16 @@
 <%= simple_form_for([ tour, booking ], remote: true) do |f|%>
-  <%= f.input :first_name %>
-  <%= f.input :last_name %>
-  <%= f.input :email %>
-  <%= f.input :phone %>
+  <%= f.input :first_name, label: false, placeholder: t('.first_name') %>
+  <%= f.input :last_name, label: false, placeholder: t('.last_name') %>
+  <%= f.input :email, label: false, placeholder: t('.email') %>
+  <%= f.input :phone, label: false, placeholder: t('.phone') %>
   <% if I18n.locale == :de %>
-  <%= f.input :booking_date, as: :string, input_html: {class: "datepicker-de"} %>
+  <%= f.input :booking_date, as: :string, label: false, placeholder: t('.date'), input_html: {class: "datepicker-de"} %>
   <% else %>
-    <%= f.input :booking_date, as: :string, input_html: {class: "datepicker"} %>
+    <%= f.input :booking_date, as: :string, label: false, placeholder: t('.date'), input_html: {class: "datepicker"} %>
   <% end %>
-  <%= f.input :comment %>
-  <%= f.submit %>
+  <%= f.input :comment, label: false, placeholder: t('.comment'), input_html: {rows: 5} %>
+  <div class="booking-button">
+    <%= f.submit t('.book'), class: "button button-small" %>
+  </div>
+
 <% end %>
