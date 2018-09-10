@@ -10,6 +10,8 @@ class BookingsController < ApplicationController
         format.html { redirect_to tour_path(@tour) }
         format.js
       end
+      BookingMailer.booking_user(@booking).deliver_now
+      BookingMailer.booking_admin(@booking).deliver_now
     else
       respond_to do |format|
         format.html { render 'tours/show' }
