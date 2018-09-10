@@ -1,0 +1,11 @@
+<h3>Neue Tour Buchung</h3>
+
+<h4>Details der Buchung</h4>
+<ul>
+  <li>Gewunches Datum: <%= @booking.booking_date %></li>
+  <li>Tour: <%= @booking.tour.name %></li>
+  <li>Name: <%= @booking.first_name + " " + @booking.last_name %></li>
+  <li>Email: <%= @booking.email %></li>
+  <li>Telefon: <%= @booking.phone %></li>
+  <li>Nachicht: <%= @booking.comment %></li>
+</ul>

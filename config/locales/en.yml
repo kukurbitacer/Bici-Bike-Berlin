@@ -16,3 +16,8 @@ en:
       tour_description: "Tour description"
       book_now: "Book now"
       your_guide: "Your guide"
+  booking_mailer:
+    booking_user:
+      subject: "Thanks for booking a tour with Bici-Bike-Berlin"
+      mail_title: "Hello %{name}, thanks for booking a tour with Bici-Bike-Berlin"
+      details_of_booking: "Here are the details of your tour"
