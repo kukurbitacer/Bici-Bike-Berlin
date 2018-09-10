@@ -36,7 +36,13 @@
           <h3><%= t('.book_now') %></h3>
           <div class="booking-form">
             <%= simple_form_for @booking do |f| %>
-            <%=  %>
+              <%= f.input :first_name %>
+              <%= f.input :last_name %>
+              <%= f.input :email %>
+              <%= f.input :phone %>
+              <%= f.input :comment %>
+              <%= f.sumbit %>
+            <% end %>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ class BookingsController < ApplicationController
 
   def create
     @booking = Booking.new
+    tour = Tour.find(params[:id])
 
   end
 
