@@ -22,6 +22,7 @@ gem 'activemodel-serializers-xml'
 gem 'rails_admin_globalize_field'
 gem 'cloudinary'
 gem 'carrierwave', '~> 1.2'
+gem 'rails-i18n', '5.1'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
