@@ -1,0 +1,13 @@
+first:
+  user: 'admin'
+  guide: 'manuella'
+  photo: 'string-photo'
+  first_page: true
+  active: true
+
+second:
+  user: 'admin'
+  guide: 'manuella'
+  photo: 'string-photo'
+  first_page: true
+  active: true

@@ -1,7 +1,14 @@
 require 'test_helper'
 
 class TourTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
+
+  def setup
+    @first = tours(:first)
+    @second = tours(:second)
+  end
+
+  # test "valid tour" do
+  #   assert @first.valid?
   # end
+
 end
