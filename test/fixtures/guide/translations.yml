@@ -1,0 +1,11 @@
+manuella_translation:
+  locale: "de"
+  description: "deutsch"
+  small_description: "deutsch"
+  globalized_model: "manuella"
+
+manuella_translation:
+  locale: "en"
+  description: "english"
+  small_description: "english"
+  globalized_model: "manuella"
