@@ -1,0 +1,4 @@
+admin:
+  email: 'manuella@example.com'
+  encrypted_password: '123456'
+  admin: true
