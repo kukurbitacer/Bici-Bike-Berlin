@@ -1,7 +1,12 @@
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+
+  def setup
+    @user = users(:admin)
+  end
+
+  test '#tours' do
+    assert_equal 2, @user.tours.size
+  end
 end

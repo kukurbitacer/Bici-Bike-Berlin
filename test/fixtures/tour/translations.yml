@@ -1,0 +1,27 @@
+first_translation:
+  locale: "en"
+  name: "Historical Berlin"
+  location: "Berlin"
+  description: "Discover \"Berlin – once upon a time\" – on this historical tour we cycle through Quarter Nikolai along Grunerstrasse to Parochialstrasse with the Parochial church, see the former town house, the cloister ruin and visit the old town wall.Along the Spree we arrive at the historical harbour and visit the oldest part of Berlin (Cölln) the picturesque fishing island. At the museum of the Brandenburg March a surprise awaits us. Further along the way we cross Janowitzbrücke and come up to Ostbahnhof, the former principal railway station of the east."
+  globalized_model: "first"
+
+first_translation:
+  locale: "de"
+  name: 'Altes, historisches Berlin\'
+  location: 'Berlin'
+  description: "Entdecken Sie mit uns das \'Berlin in den Kinderschuhen\' - auf der Historischen Tour radeln wir durchs Nikolaiviertel entlang der Grunerstraße zur Parochialstraße mit Parochialkirche, sehen das ehemalige Stadthaus, die Klosterruine und besichtigen die alte Stadtmauer. Am Märkischen Museum erwarten uns einige Überraschungen... Weiter geht\'s zur Janowitzbrücke bis zum Ostbahnhof."
+  globalized_model: "first"
+
+second_translation:
+  locale: "en"
+  name: "Historical Berlin"
+  location: "Berlin"
+  description: "Discover \"Berlin – once upon a time\" – on this historical tour we cycle through Quarter Nikolai along Grunerstrasse to Parochialstrasse with the Parochial church, see the former town house, the cloister ruin and visit the old town wall.Along the Spree we arrive at the historical harbour and visit the oldest part of Berlin (Cölln) the picturesque fishing island. At the museum of the Brandenburg March a surprise awaits us. Further along the way we cross Janowitzbrücke and come up to Ostbahnhof, the former principal railway station of the east."
+  globalized_model: "first"
+
+second_translation:
+  locale: "de"
+  name: 'Altes, historisches Berlin'
+  location: 'Berlin'
+  description: "Entdecken Sie mit uns das \'Berlin in den Kinderschuhen\' - auf der Historischen Tour radeln wir durchs Nikolaiviertel entlang der Grunerstraße zur Parochialstraße mit Parochialkirche, sehen das ehemalige Stadthaus, die Klosterruine und besichtigen die alte Stadtmauer. Am Märkischen Museum erwarten uns einige Überraschungen... Weiter geht\'s zur Janowitzbrücke bis zum Ostbahnhof."
+  globalized_model: "first"
