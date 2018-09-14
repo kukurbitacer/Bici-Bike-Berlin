@@ -4,8 +4,9 @@ function refreshForm(innerHTML) {
 }
 
 <% if @booking.errors.any? %>
+  console.log('saving error');
   refreshForm('<%= j render "bookings/form", tour: @tour, booking: @booking %>');
 <% else %>
-  refreshForm('<%= j render "bookings/form", tour: @tour, booking: Booking.new %>');
+  console.log('all good');
   sweetAlert('<%= t('.thank_you') %>', '<%= t('.thank_you_text') %>', "success");
 <% end %>
