@@ -2,6 +2,9 @@ first:
   user: 'admin'
   guide: 'manuella'
   photo: 'string-photo'
+  name: 'Historical Berlin'
+  location: 'Berlin'
+  description: "Discover \"Berlin – once upon a time\" – on this historical tour we cycle through Quarter Nikolai along Grunerstrasse to Parochialstrasse with the Parochial church, see the former town house, the cloister ruin and visit the old town wall.Along the Spree we arrive at the historical harbour and visit the oldest part of Berlin (Cölln) the picturesque fishing island. At the museum of the Brandenburg March a surprise awaits us. Further along the way we cross Janowitzbrücke and come up to Ostbahnhof, the former principal railway station of the east."
   first_page: true
   active: true
 
