@@ -8,5 +8,8 @@ function refreshForm(innerHTML) {
   refreshForm('<%= j render "bookings/form", tour: @tour, booking: @booking %>');
 <% else %>
   console.log('all good');
-  sweetAlert('<%= t('.thank_you') %>', '<%= t('.thank_you_text') %>', "success");
+  sweetAlert('<%= t('.thank_you') %>', '<%= t('.thank_you_text') %>', "success")
+            .then(() => {
+              window.location = '<%= tours_path %>'
+            });
 <% end %>
