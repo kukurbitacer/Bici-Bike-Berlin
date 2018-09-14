@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_12_101556) do
+ActiveRecord::Schema.define(version: 2018_09_14_090153) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2018_09_12_101556) do
     t.bigint "tour_id"
     t.integer "person_attending"
     t.boolean "bike", default: false
+    t.integer "bike_number"
     t.index ["tour_id"], name: "index_bookings_on_tour_id"
   end
 

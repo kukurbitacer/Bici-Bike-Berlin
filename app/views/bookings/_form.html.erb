@@ -13,6 +13,9 @@
   <div class="radio_buttons_container">
     <%= f.input_field :bike, as: :radio_buttons%>
   </div>
+  <div class="bike-number-container">
+  <%= f.input :bike_number, label: false, collection: 1..50, prompt: t('.number_of_bikes') %>
+  </div>
   <%= f.input :comment, label: false, placeholder: t('.comment'), input_html: {rows: 5} %>
   <div class="booking-button">
     <%= f.submit t('.book'), class: "button button-small" %>
