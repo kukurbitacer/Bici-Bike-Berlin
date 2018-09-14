@@ -7,4 +7,5 @@ function refreshForm(innerHTML) {
   refreshForm('<%= j render "bookings/form", tour: @tour, booking: @booking %>');
 <% else %>
   refreshForm('<%= j render "bookings/form", tour: @tour, booking: Booking.new %>');
+  sweetAlert('<%= t('.thank_you') %>', '<%= t('.thank_you_text') %>', "success");
 <% end %>

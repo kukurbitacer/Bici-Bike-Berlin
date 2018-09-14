@@ -7,7 +7,7 @@ class BookingsController < ApplicationController
     @booking.tour = @tour
     if @booking.save
       respond_to do |format|
-        format.html { redirect_to tour_path(@tour) }
+        format.html { redirect_to tours_path }
         format.js
       end
       BookingMailer.booking_user(@booking).deliver_now

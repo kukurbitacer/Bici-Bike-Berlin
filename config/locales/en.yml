@@ -23,13 +23,16 @@ en:
       details_of_booking: "Here are the details of your tour"
   bookings:
     form:
-      first_name: "First name"
-      last_name: "Last name"
-      email: "name@example.com"
+      first_name: "First name *"
+      last_name: "Last name *"
+      email: "name@example.com *"
       phone: "Phone number"
-      date: "Date"
+      date: "Date *"
       comment: "Send your guide a message!"
       book: "Book now!"
-      number_of_people: "Number of people attending"
+      number_of_people: "Number of people attending *"
       bike: "Will some participants need bikes?"
       number_of_bikes: "How many bikes to rent?"
+    create:
+      thank_you: "Booking successful"
+      thank_you_text: "Thank you for booking a tour with Bici-Bike-Berlin, you should recieve a confirmation email shortly"
