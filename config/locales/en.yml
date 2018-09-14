@@ -19,8 +19,16 @@ en:
   booking_mailer:
     booking_user:
       subject: "Thanks for booking a tour with Bici-Bike-Berlin"
-      mail_title: "Hello %{name}, thanks for booking a tour with Bici-Bike-Berlin"
-      details_of_booking: "Here are the details of your tour"
+      mail_title: "Hello %{name},"
+      thank_you: "Thank you for booking a tour with Bici-Bike-Berlin! Your request has been taken into account and your guide should contact you shortly to sort out the last details. We will do our best to meet all your requests in order for you to have the best experience of Berlin!"
+      details_of_booking: "A little summary of your tour :"
+      date: "Date"
+      tour_name: "Tour name"
+      number_of_people: "Number of people"
+      number_of_bikes: "Number of bikes requested"
+      no_bikes: "No bikes requested"
+      change_booking: "If you need to make any changes to your booking or ask a few extra questions don't hesitate to contact your guide!"
+      contact_guide: "Contact %{guide}"
   bookings:
     form:
       first_name: "First name *"

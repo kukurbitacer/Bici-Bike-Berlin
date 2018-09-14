@@ -1,5 +1,68 @@
-<h3><%= t('.mail_title', name: @booking.first_name) %></h3>
+<table align= "center" border="1" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
+  <tr>
+    <td bgcolor="#FFC94C" style="padding: 10px 10px 10px 10px; color: #403F4C;">
+      <table border="1" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td>
+            <h3><%= t('.mail_title', name: @booking.first_name.capitalize) %></h3>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: 10px;">
+            <p style="margin: 0 0 5px 0"><%= t('.thank_you') %></p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF" style="padding: 10px 10px 10px 10px;">
+      <table border="1" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td style="padding-left: 10px;">
+            <p><%= t('.details_of_booking') %></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: 15px; color: #403F4C">
+            <p style="margin: 0 0 5px 0"><span><%= t('.date') %> :</span> <%= @booking.booking_date %></p>
+            <p style="margin: 0 0 5px 0"><span><%= t('.tour_name') %> :</span> <%= @booking.tour.name %></p>
+            <p style="margin: 0 0 5px 0"><span><%= t('.number_of_people') %> :</span> <%= @booking.person_attending.to_s %></p>
+            <% if @booking.bike %>
+            <p style="margin: 0 0 5px 0"><span><%= t('.number_of_bikes') %> :</span> <%= @booking.bike_number.to_s %></p>
+            <% else %>
+            <p style="margin: 0 0 5px 0"><%= t('.no_bikes') %></p>
+            <% end %>
+            <p><%= t('.change_booking') %></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: 10px;">
+            <p><%= t('.contact_guide', guide: @booking.tour.guide.name) %></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table border="1" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td align="center">
+                  <%= cl_image_tag(@booking.tour.guide.photo, width: 75, style: "border-radius: 50%;") %>
+                </td>
+                <td style="padding-left: 15px; color: #403F4C">
+                  <p style="margin: 0 0 5px 0"><span><%= t('.email') %> :</span> <%= @booking.tour.guide.email %></p>
+                  <p style="margin: 0 0 5px 0"><span><%= t('.phone') %> :</span><%= @booking.tour.guide.phone %></p>
+                </td>
+              </tr>
+            </td>
+          </table>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#CACFD6" style="padding: 10px 10px 10px 10px;">
+      <h4>Footer</h4>
+    </td>
+  </tr>
+</table>
 
-<h4><%= t('.details_of_booking') %></h4>
-<p><%= @booking.booking_date %></p>
-<p><%= @booking.tour.name %></p>
