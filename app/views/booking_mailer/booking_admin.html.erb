@@ -1,0 +1,47 @@
+<table align= "center" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; font-family: Arial, sans-serif; border: solid 1px #d4d8db;">
+  <tr>
+    <td bgcolor="#549FEA" style="padding: 20px 10px 20px 10px; color: #FFFFFF;">
+      <b>Neue Tour Buchung!</b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td style="padding: 15px 0px 10px 10px;">
+            <b>Details der Buchung</b>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: 15px;">
+            <p style="margin: 0 0 5px 0">Gewünschtes Datum: <%= l(@booking.booking_date, format: :long) %></p>
+            <p style="margin: 0 0 5px 0">
+              Tour: <%= @booking.tour.name %>
+            </p>
+            <p style="margin: 0 0 5px 0">
+              Client Name: <%= @booking.first_name + " " + @booking.last_name %>
+            </p>
+            <p style="margin: 0 0 5px 0">
+              Gruppengröße: <%= @booking.person_attending %>
+            </p>
+            <p style="margin: 0 0 5px 0">
+              Anzahl Fahrräder: <%= @booking.bike_number %>
+            </p>
+            <p style="margin: 0 0 5px 0">
+              Email: <%= @booking.email %>
+            </p>
+            <p style="margin: 0 0 5px 0">
+              Telefon: <%= @booking.phone %>
+            </p>
+            <p style="margin: 0 0 5px 0">
+              Nachicht:
+            </p>
+            <p style="margin: 0 0 5px 0">
+              <%= @booking.comment %>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

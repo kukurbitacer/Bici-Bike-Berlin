@@ -1,0 +1,15 @@
+function refreshForm(innerHTML) {
+  const newBookingForm = document.getElementById('new_booking');
+  newBookingForm.innerHTML = innerHTML;
+}
+
+<% if @booking.errors.any? %>
+  console.log('saving error');
+  refreshForm('<%= j render "bookings/form", tour: @tour, booking: @booking %>');
+<% else %>
+  console.log('all good');
+  sweetAlert('<%= t('.thank_you') %>', '<%= t('.thank_you_text') %>', "success")
+            .then(() => {
+              window.location = '<%= tours_path %>'
+            });
+<% end %>

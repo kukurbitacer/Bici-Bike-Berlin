@@ -29,9 +29,11 @@ Casecmp:
   Enabled: false
 CyclomaticComplexity:
   Enabled: false
-MethodMissing:
-  Enabled: false
 Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/MethodMissingSuper:
+  Enabled: false
+Style/MissingRespondToMissing:
   Enabled: false
 LineLength:
   Max: 120
