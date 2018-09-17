@@ -1,3 +1,16 @@
 a:hover {
   text-decoration: none;
 }
+
+.description-home {
+  margin: 25px 5px 25px 5px;
+  color: $gray;
+
+  p {
+    margin: 0
+  }
+}
+
+.title-gray {
+  color: $gray;
+}
