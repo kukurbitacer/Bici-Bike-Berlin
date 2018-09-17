@@ -1,0 +1,25 @@
+.booking-button {
+  display: flex;
+  justify-content: center;
+}
+
+.radio_buttons_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bike-number-container {
+  display: none;
+  animation: fade .6s 1
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}

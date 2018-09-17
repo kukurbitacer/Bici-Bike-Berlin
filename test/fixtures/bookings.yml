@@ -1,0 +1,10 @@
+booking:
+  tour: first
+  first_name: "John"
+  last_name: "Doe"
+  email: "john.doe@example.com"
+  phone: "+4965438196"
+  booking_date: "24/09/2018"
+  comment: "Thank you for letting us know"
+  person_attending: 5
+  bike: true

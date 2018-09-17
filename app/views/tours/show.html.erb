@@ -32,8 +32,11 @@
         </div>
       </div>
       <div class="col-xs-12 col-sm-5 col-md-4">
-        <div class="tour-booking card-back-white card-height-200 card-basic">
+        <div class="tour-booking card-back-white card-height-auto card-basic">
           <h3><%= t('.book_now') %></h3>
+         <div class="booking-form">
+           <%= render 'bookings/form', tour: @tour, booking: @booking %>
+         </div>
         </div>
       </div>
     </div>

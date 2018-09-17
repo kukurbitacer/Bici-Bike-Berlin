@@ -1,5 +1,5 @@
 class ToursController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:index]
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
     @tours = Tour.where(active: true)
@@ -7,5 +7,8 @@ class ToursController < ApplicationController
 
   def show
     @tour = Tour.find(params[:id])
+    @booking = Booking.new
+    local = I18n.locale
   end
+
 end

@@ -1,2 +1,4 @@
 de:
-  hello: "Hallo Welt"
+  bookings:
+      form:
+        first_name: "Vorname"
