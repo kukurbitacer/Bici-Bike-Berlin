@@ -14,18 +14,18 @@
         </tr>
         <tr>
           <td style="padding-left: 15px;">
-            <p style="margin: 0 0 5px 0">Gewunches Datum: <%= l(@booking.booking_date, format: :long) %></p>
+            <p style="margin: 0 0 5px 0">Gewünschtes Datum: <%= l(@booking.booking_date, format: :long) %></p>
             <p style="margin: 0 0 5px 0">
               Tour: <%= @booking.tour.name %>
             </p>
             <p style="margin: 0 0 5px 0">
-              Name: <%= @booking.first_name + " " + @booking.last_name %>
+              Client Name: <%= @booking.first_name + " " + @booking.last_name %>
             </p>
             <p style="margin: 0 0 5px 0">
-              Anzahl der Gruppe: <%= @booking.person_attending %>
+              Gruppengröße: <%= @booking.person_attending %>
             </p>
             <p style="margin: 0 0 5px 0">
-              Anzahl Fahräder: <%= @booking.bike_number %>
+              Anzahl Fahrräder: <%= @booking.bike_number %>
             </p>
             <p style="margin: 0 0 5px 0">
               Email: <%= @booking.email %>
