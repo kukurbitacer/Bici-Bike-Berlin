@@ -11,9 +11,9 @@
       <!-- Links when logged in -->
       <%= link_to t('.tours'), root_path(anchor: 'tours'), class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to t('.contact'), "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <span>
-        <%= link_to "DE", url_for(locale: 'de') %> |
-        <%= link_to "EN", url_for(locale: 'en')  %>
+      <span class="navbar-wagon-item">
+        <%= link_to "DE", url_for(locale: 'de'), class: "navbar-wagon-link" %> |
+        <%= link_to "EN", url_for(locale: 'en'), class: "navbar-wagon-link"  %>
       </span>
   </div>
 
@@ -22,9 +22,16 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle hamburger-hover" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Tours</a></li>
-        <li><a href="#">Guides</a></li>
+        <li>
+          <%= link_to t('.tours'), root_path(anchor: 'tours')  %>
+        </li>
         <li><a href="#">Contacts</a></li>
+        <li class="navbar-language">
+          <span>
+        <%= link_to "DE", url_for(locale: 'de') %> |
+        <%= link_to "EN", url_for(locale: 'en') %>
+      </span>
+        </li>
       </ul>
     </div>
   </div>
