@@ -4,23 +4,27 @@
   display: block;
   text-align: center;
   cursor: pointer;
-  text-transform: uppercase;
   outline: none;
   overflow: hidden;
   color: $white;
   font-family: $headers-font;
   background-color: $blue;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin: 0;
   box-shadow: 0 5px 15px rgba(0,0,0,0.20);
   border-radius: 2px;
   transition: all .3s ease-in
 }
 
+.button:hover {
+  background-color: $yellow;
+  color: $black;
+}
+
 .button-large {
   font-weight: bold;
   font-size: 15px;
-  padding: 17px 30px;
+  padding: 10px 18px;
 }
 
 .button-small {
@@ -30,7 +34,3 @@
   padding: 10px 15px;
 }
 
-.button:hover {
-  background-color: $yellow;
-  color: $black;
-}
