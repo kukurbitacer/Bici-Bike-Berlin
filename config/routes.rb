@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   scope '(:locale)', locale: /de/ do
     root to: 'pages#home'
-    resources :tours, only: [:index, :show] do
+    resources :tours, only: [:show] do
       resources :bookings, only: [:create]
     end
     resources :guides, only: [:show]
