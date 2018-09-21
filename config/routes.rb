@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
 
-  scope '(:locale)', locale: /de/ do
+  scope '/:locale' do
     root to: 'pages#home'
     resources :tours, only: [:show] do
       resources :bookings, only: [:create]
