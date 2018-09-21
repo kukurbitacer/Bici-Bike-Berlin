@@ -31,7 +31,7 @@
     <div class="row">
       <% @tours.each do |tour| %>
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="card-tour" style="background-image: url('<%= cl_image_path tour.photo %>');background-position: center; background-size: cover;">
+          <div class="card-tour" data-aos="fade-up" data-aos-offset="100" style="background-image: url('<%= cl_image_path tour.photo %>');background-position: center; background-size: cover;">
             <div class="card-description">
               <div class="card-left">
                 <h4 class="card-title"><%= tour.name %></h4>
