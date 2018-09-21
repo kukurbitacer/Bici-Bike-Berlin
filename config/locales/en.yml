@@ -41,6 +41,8 @@ en:
       book: "Book now!"
       number_of_people: "Number of people attending *"
       bike: "Will some participants need bikes?"
+      yes: "Yes"
+      no: "No"
       number_of_bikes: "How many bikes to rent?"
     create:
       thank_you: "Booking successful"
