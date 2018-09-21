@@ -4,10 +4,11 @@ class BookingsController < ApplicationController
   def create
     @tour = Tour.find(params[:tour_id])
     @booking = Booking.new(booking_params)
+    @booking.bike_number = 0 if @booking.bike_number.nil?
     @booking.tour = @tour
     if @booking.save
       respond_to do |format|
-        format.html { redirect_to tours_path }
+        format.html { redirect_to root_path }
         format.js
       end
       BookingMailer.booking_user(@booking).deliver_now

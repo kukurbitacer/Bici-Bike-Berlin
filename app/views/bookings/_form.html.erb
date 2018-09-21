@@ -14,7 +14,7 @@
     <%= f.input_field :bike, as: :radio_buttons, class: "form-radio"%>
   </div>
   <div class="bike-number-container">
-  <%= f.input :bike_number, label: false, collection: 0..50, include_blank: t('.number_of_bikes') %>
+  <%= f.input :bike_number, label: false, collection: 1..50, include_blank: t('.number_of_bikes') %>
   </div>
   <%= f.input :comment, label: false, placeholder: t('.comment'), input_html: {rows: 5} %>
   <div class="booking-button">
