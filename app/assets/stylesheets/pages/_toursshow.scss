@@ -11,10 +11,11 @@
 
 .icon-small a {
   font-size: 25px;
-  color: $green;
+  color: $blue;
   transition: all .3s ease-in;
 }
 
 .icon-small:hover a {
   font-size: 30px;
+  color: $yellow;
 }
