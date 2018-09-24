@@ -10,6 +10,6 @@ function refreshForm(innerHTML) {
   console.log('all good');
   sweetAlert('<%= t('.thank_you') %>', '<%= t('.thank_you_text') %>', "success")
             .then(() => {
-              window.location = '<%= tours_path %>'
+              window.location = '<%= root_path %>'
             });
 <% end %>
