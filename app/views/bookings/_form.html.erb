@@ -9,7 +9,7 @@
     <%= f.input :booking_date, as: :string, label: false, placeholder: t('.date'), input_html: {class: "datepicker default_form"} %>
   <% end %>
   <%= f.input :person_attending, label: false, collection: 1..50, prompt: t('.number_of_people'), input_html: {class: "default_form"}  %>
-  <p><%= t('.bike') %></p>
+  <p class="default_form_paragraph"><%= t('.bike') %></p>
   <div class="radio_buttons_container">
     <%= f.input_field :bike, as: :radio_buttons, class: "form-radio"%>
   </div>

@@ -39,6 +39,7 @@
      font: 13px/1 'Open Sans', sans-serif;
      left: 11px;
      top: 7px;
+     color: $blue;
      content: '\02143';
      transform: rotate(40deg);
 }
@@ -81,4 +82,10 @@
 
 .select .default_form {
   color: $blue;
+}
+
+.default_form_paragraph {
+  color: $blue;
+  margin-left: 12px;
+  margin-bottom: 0;
 }
