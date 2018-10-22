@@ -71,6 +71,6 @@ RailsAdmin.config do |config|
   end
 
 
-  config.included_models = ['Tour','Tour::Translation', 'User', 'Guide', 'Guide::Translation']
+  config.included_models = ['Tour','Tour::Translation', 'User', 'Guide', 'Guide::Translation', 'Booking']
 
 end
