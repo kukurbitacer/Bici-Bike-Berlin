@@ -1,22 +1,22 @@
 <%= simple_form_for([ tour, booking ], remote: true) do |f|%>
-  <%= f.input :first_name, label: false, placeholder: t('.first_name') %>
-  <%= f.input :last_name, label: false, placeholder: t('.last_name') %>
-  <%= f.input :email, label: false, placeholder: t('.email') %>
-  <%= f.input :phone, label: false, placeholder: t('.phone') %>
+  <%= f.input :first_name, label: false, placeholder: t('.first_name'), input_html: {class: "default_form"} %>
+  <%= f.input :last_name, label: false, placeholder: t('.last_name'), input_html: {class: "default_form"} %>
+  <%= f.input :email, label: false, placeholder: t('.email'), input_html: {class: "default_form"} %>
+  <%= f.input :phone, label: false, placeholder: t('.phone'), input_html: {class: "default_form"} %>
   <% if I18n.locale == :de %>
-  <%= f.input :booking_date, as: :string, label: false, placeholder: t('.date'), input_html: {class: "datepicker-de"} %>
+  <%= f.input :booking_date, as: :string, label: false, placeholder: t('.date'), input_html: {class: "datepicker-de default_form"} %>
   <% else %>
-    <%= f.input :booking_date, as: :string, label: false, placeholder: t('.date'), input_html: {class: "datepicker"} %>
+    <%= f.input :booking_date, as: :string, label: false, placeholder: t('.date'), input_html: {class: "datepicker default_form"} %>
   <% end %>
-  <%= f.input :person_attending, label: false, collection: 1..50, prompt: t('.number_of_people')  %>
-  <p><%= t('.bike') %></p>
+  <%= f.input :person_attending, label: false, collection: 1..50, prompt: t('.number_of_people'), input_html: {class: "default_form"}  %>
+  <p class="default_form_paragraph"><%= t('.bike') %></p>
   <div class="radio_buttons_container">
     <%= f.input_field :bike, as: :radio_buttons, class: "form-radio"%>
   </div>
   <div class="bike-number-container">
-  <%= f.input :bike_number, label: false, collection: 1..50, include_blank: t('.number_of_bikes') %>
+  <%= f.input :bike_number, label: false, collection: 1..50, include_blank: t('.number_of_bikes'), input_html: {class: "default_form"} %>
   </div>
-  <%= f.input :comment, label: false, placeholder: t('.comment'), input_html: {rows: 5} %>
+  <%= f.input :comment, label: false, placeholder: t('.comment'), input_html: {rows: 5, class: "default_form"} %>
   <div class="booking-button">
     <%= f.submit t('.book'), class: "button button-large" %>
   </div>
