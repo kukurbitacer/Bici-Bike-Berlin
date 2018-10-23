@@ -3,9 +3,42 @@ function refreshForm(innerHTML) {
   newBookingForm.innerHTML = innerHTML;
 }
 
+function bookingToggle() {
+  let buttonTrue = document.getElementById("booking_bike_true");
+  let buttonFalse = document.getElementById("booking_bike_false");
+
+  const toggleBike = (button, style) => {
+    button.addEventListener('change', (event) => {
+      if (button.checked) {
+        document.querySelector('.bike-number-container').style.display = style;
+      }
+    });
+  };
+
+  if (buttonTrue) {
+    toggleBike(buttonTrue, "block");
+    toggleBike(buttonFalse, "none");
+  }
+}
+
+function bookingFlatpicker() {
+  flatpickr(".datepicker", {
+    altInput: true
+  })
+
+  flatpickr(".datepicker-de", {
+    altInput: true,
+    "locale": "de"
+  })
+}
+
+
+
 <% if @booking.errors.any? %>
   console.log('saving error');
   refreshForm('<%= j render "bookings/form", tour: @tour, booking: @booking %>');
+  bookingToggle()
+  bookingFlatpicker()
 <% else %>
   console.log('all good');
   sweetAlert('<%= t('.thank_you') %>', '<%= t('.thank_you_text') %>', "success")
