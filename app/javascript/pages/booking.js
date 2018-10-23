@@ -1,5 +1,5 @@
-const buttonTrue = document.getElementById("booking_bike_true");
-const buttonFalse = document.getElementById("booking_bike_false");
+let buttonTrue = document.getElementById("booking_bike_true");
+let buttonFalse = document.getElementById("booking_bike_false");
 
 const toggleBike = (button, style) => {
   button.addEventListener('change', (event) => {
