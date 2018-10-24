@@ -47,3 +47,9 @@ en:
     create:
       thank_you: "Booking successful"
       thank_you_text: "Thank you for booking a tour with Bici-Bike-Berlin, you should recieve a confirmation email shortly"
+  guides:
+    show:
+      your_guide: "Your guide %{name}"
+      phone: "Phone"
+      email: "Email"
+      address: "Address"
