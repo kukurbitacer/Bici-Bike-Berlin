@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <div class="picture-guide text-center">
+        <%= cl_image_tag(@guide.photo, class: 'card-image')%>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <div class="card-basic card-back-white">
+        <h3><%= @guide.name %></h3>
+        <p><%= @guide.description %></p>
+      </div>
+      <div class="card-basic card-back-white">
+        <h3><%= t('.contact') %></h3>
+        <p><%= t('.email') %> : <%= @guide.email %></p>
+        <p><%= t('.phone') %> : <%= @guide.phone %></p>
+        <p><%= t('.address') %> : <%= @guide.address %></p>
+      </div>
+    </div>
+  </div>
+</div>
+
