@@ -1,5 +1,4 @@
 Rails.application.configure do
-  config.action_mailer.default_url_options = { host: "http://TODO_PUT_YOUR_DOMAIN_HERE" }
   # Verifies that versions and hashed value of the package contents in the project's package.json
   config.webpacker.check_yarn_integrity = false
   # Settings specified here will take precedence over those in config/application.rb.
@@ -67,6 +66,9 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "Bici-Bike-Berlin_#{Rails.env}"
 
   config.action_mailer.perform_caching = false
+  config.action_mailer.delivery_method = :postmark
+  config.action_mailer.postmark_settings = { api_key: ENV['POSTMARK_API_KEY'] }
+  config.action_mailer.default_url_options = { host: "bici-bike-berlin.herokuapp.com" }
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
@@ -76,6 +78,7 @@ Rails.application.configure do
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
   config.i18n.available_locales = [:en, :de]
+  config.i18n.default_locale = :en
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify

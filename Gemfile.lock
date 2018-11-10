@@ -143,6 +143,7 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (6.0.1)
       railties (>= 3.2.16)
+    json (2.1.0)
     kaminari (1.1.1)
       activesupport (>= 4.1.0)
       kaminari-actionview (= 1.1.1)
@@ -189,6 +190,12 @@ GEM
     parser (2.5.1.2)
       ast (~> 2.4.0)
     pg (0.21.0)
+    postmark (1.14.0)
+      json
+      rake
+    postmark-rails (0.18.0)
+      actionmailer (>= 3.0.0)
+      postmark (~> 1.14.0)
     powerpack (0.1.2)
     pry (0.11.3)
       coderay (~> 1.1.0)
@@ -361,6 +368,7 @@ DEPENDENCIES
   letter_opener
   listen (~> 3.0.5)
   pg (~> 0.21)
+  postmark-rails
   pry-byebug
   pry-rails
   puma
